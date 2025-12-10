@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scratch Page</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body class="scratch">
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="scratch.html">Scratch Page</a>
+        <a href="resume.html">Resume</a>
+    </nav>
+
+    <h1>My Scratch Page</h1>
+
+    <p style="text-align: center;">
+        <a href="#video-part">Jump down to the video</a>
+    </p>
+
+    <div class="bigbox">
+        <h2>Stuff I Care About</h2>
+        <p>This is an ordered list with another list inside it so it shows I understand how to nest lists.</p>
+
+        <ol>
+            <li>Swimming
+                <ul>
+                    <li>Distance freestyle</li>
+                    <li>IM events</li>
+                    <li>Training with the team</li>
+                </ul>
+            </li>
+            <li>School
+                <ul>
+                    <li>Business and finance</li>
+                    <li>Tech and data classes</li>
+                </ul>
+            </li>
+            <li>Free Time
+                <ul>
+                    <li>Friends</li>
+                    <li>Music</li>
+                    <li>Movies or YouTube</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+
+    <div class="bigbox">
+        <h2>Picture</h2>
+        <p>This picture is just a normal image I put in my images folder.</p>
+
+        <p style="text-align: center;">
+            <img src="images/swim.PNG" alt="Swimming picture" style="max-width: 100%; height: auto;">
+        </p>
+    </div>
+
+    <div class="bigbox" id="video-part">
+        <h2>Video</h2>
+        <p>Here is a YouTube video embedded on the page.</p>
+
+        <p style="text-align: center;">
+           <iframe width="560" height="315"
+                src="https://www.youtube.com/embed/c5OlAs63dUc"
+                title="EXDM Video"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+
+        </p>
+
+        <div class="row">
+            <div class="smallbox">
+                <h3>Box One</h3>
+                <p>This is the video I made earlier this semester for my EXDM class.</p>
+            </div>
+            <div class="smallbox">
+                <h3>Box Two</h3>
+                <p>I added this swimming video because it connects with one of my main interests.</p>
+
+            </div>
+            <div class="smallbox">
+                <h3>Box Three</h3>
+                <p>I chose a BYU video since most of the other stuff on this page ties back to school and swimming.</p>
+
+            </div>
+        </div>
+    </div>
+
+   <div class="bigbox">
+        <h2>Tableau Graph</h2>
+        <p>This is a live Tableau graph I embedded from Tableau Public.</p>
+
+        <div>
+            <div class='tableauPlaceholder' id='viz1765391648157' style='position: relative'><noscript><a href='#'><img alt='Swimming ' src='https://public.tableau.com/static/images/mu/musclesusedinswimming/Swimming/1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='musclesusedinswimming/Swimming' /><param name='tabs' value='no' /><param name='toolbar' value='no' /><param name='static_image' value='https://public.tableau.com/static/images/mu/musclesusedinswimming/Swimming/1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>
+            <script type='text/javascript'>
+                var divElement = document.getElementById('viz1765391648157');
+                var vizElement = divElement.getElementsByTagName('object')[0];
+                vizElement.style.width='1200px';
+                vizElement.style.height='1100px';
+                var scriptElement = document.createElement('script');
+                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                vizElement.parentNode.insertBefore(scriptElement, vizElement);
+            </script>
+        </div>
+    </div>
+ <div class="bigbox">
+        <h2>Little Web App</h2>
+        <p>I made a small number guessing game with help from AI.</p>
+        <p style="text-align: center;">
+            <a href="app.html">Play the game</a>
+        </p>
+    </div>
+</body>
+</html>

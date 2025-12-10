@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Number Guessing Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            max-width: 500px;
+            margin: 40px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 6px;
+            text-align: center;
+        }
+
+        input {
+            padding: 5px;
+            width: 70px;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 6px 10px;
+            margin-left: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        a {
+            display: block;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <h1>Guessing Game</h1>
+        <p>I'm thinking of a number between 1 and 20. Try to guess it.</p>
+
+        <input type="number" id="guess" min="1" max="20">
+        <button onclick="checkGuess()">Guess</button>
+
+        <p id="message"></p>
+        <p id="tries"></p>
+
+        <a href="scratch.html">Back to Scratch Page</a>
+    </div>
+
+    <script>
+        let secretNumber = Math.floor(Math.random() * 20) + 1;
+        let count = 0;
+
+        function checkGuess() {
+            let g = Number(document.getElementById("guess").value);
+            let msg = document.getElementById("message");
+            let t = document.getElementById("tries");
+
+            if (!g) {
+                msg.textContent = "Type a number first.";
+                return;
+            }
+
+            count++;
+
+            if (g === secretNumber) {
+                msg.textContent = "You got it! The number was " + secretNumber;
+                t.textContent = "Tries: " + count;
+            } else if (g < secretNumber) {
+                msg.textContent = "Too low.";
+                t.textContent = "Tries: " + count;
+            } else {
+                msg.textContent = "Too high.";
+                t.textContent = "Tries: " + count;
+            }
+
+            document.getElementById("guess").value = "";
+        }
+    </script>
+
+</body>
+</html>

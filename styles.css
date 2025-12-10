@@ -1,0 +1,68 @@
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222222;
+    margin: 0;
+}
+
+/* scratch page only */
+.scratch {
+    background-color: #e6f2ff;
+}
+
+nav {
+    background-color: #333333;
+    padding: 8px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 8px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 25px;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+p {
+    max-width: 800px;
+    margin: 10px auto;
+    line-height: 1.4;
+}
+
+/* just a simple content box */
+.bigbox {
+    max-width: 850px;
+    margin: 20px auto;
+    padding: 12px;
+    background-color: white;
+    border-radius: 6px;
+}
+
+/* row of smaller boxes under the video */
+.row {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.smallbox {
+    flex: 1 1 220px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 6px;
+    font-size: 14px;
+}
